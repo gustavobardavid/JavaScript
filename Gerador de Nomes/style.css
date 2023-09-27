@@ -1,0 +1,50 @@
+* {
+    padding: 10px;
+    margin: 10 10;
+}
+.bots-grid {
+    display: grid;
+    font-family: monospace;
+    grid-template-columns: repeat(4, 1fr); /* Três colunas igualmente espaçadas */
+    gap: 10px; /* Espaçamento entre as fotos */
+    max-width: 1200px; /* Largura máxima da grade */
+    margin: 0 auto; /* Centraliza a grade horizontalmente */
+    padding: 20px; /* Espaçamento ao redor da grade */
+  }
+
+.bots-grid div {
+    box-sizing: border-box;
+    margin: 0 0;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    padding: 5px 0px;
+    box-sizing: border-box; 
+    transition: background-image 0.3s ease-in-out;
+}
+
+.bots-grid span {
+    font-size: medium;
+    font-weight: 300;
+}
+
+.bots-grid div:hover {
+    border: 0.2px solid #3700ff;
+}
+
+.bots-grid button {
+    background-color: #ffffff;
+    height: 50px;
+    width: 100%;
+    border: 1px solid #efe8e8;
+    /* border:1px solid #ffffff; */
+    color:#000000;
+    align-items: center;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.bots-grid button:hover {
+    background-color: #0d5687;
+    color: #fff;
+}
