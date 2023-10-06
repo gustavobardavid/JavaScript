@@ -8,6 +8,25 @@ button {
     cursor: pointer;
 }
 
+.grid {
+    display: grid;
+    font-family: monospace;
+    grid-template-columns: repeat(4, 1fr); /* Três colunas igualmente espaçadas */
+    gap: 10px; /* Espaçamento entre as fotos */
+    max-width: 1200px; /* Largura máxima da grade */
+    margin: 0 auto; /* Centraliza a grade horizontalmente */
+    padding: 20px; /* Espaçamento ao redor da grade */
+  }
+
+.grid div {
+    box-sizing: border-box;
+    margin: 0 0;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    padding: 5px 0px;
+    box-sizing: border-box; 
+    transition: background-image 0.3s ease-in-out;
+}
 
 input {
     width: 100%;
@@ -52,8 +71,8 @@ tr:nth-child(even) {
 body {
     /* display: flex;
     justify-content: center; */
-    background-color: #020518;
-    color: #fff;
+    background-color: #ffffff;
+    color: #000000;
     font-weight: 600;
     border-radius: 8px;
     padding: 50px;

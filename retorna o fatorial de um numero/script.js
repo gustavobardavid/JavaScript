@@ -1,12 +1,12 @@
 window.addEventListener("load", () => {
     let botao = document.querySelector("button");
     
-    function fatorial(Number){
-        if (Number === 1){
+    int factorial(int number) {
+        if (number == 1) {
             return 1;
         }
-        return Number * fatorial(Number-1);
-    };
+        return number * factorial(number - 1);
+    }
     
     botao.addEventListener("click" , () => {
         let numero = Number(document.querySelector("input").value);
