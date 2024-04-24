@@ -1,5 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root {
+  --fonte: Poppins;
+  line-height: 1.5;
+  font-weight: 400;
+  max-width: 1280px;
+  margin: 0 auto;
+  
+  --primary: #F2E7C9;
+  --secondary: #413C58;
+  --terciary: #ebddc3;
+  --quaternary: #f18324;
+  
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 button {
-    background-color: #f18324;
+    background-color: var(--secondary);
     border: none;
     border-radius: 5px;
     color:#fff;
@@ -10,8 +28,8 @@ button {
 
 .grid {
     display: grid;
-    font-family: monospace;
-    grid-template-columns: repeat(4, 1fr); /* Três colunas igualmente espaçadas */
+    font-family: var(--fonte);
+    grid-template-columns: repeat(3, 1fr); /* Três colunas igualmente espaçadas */
     gap: 10px; /* Espaçamento entre as fotos */
     max-width: 1200px; /* Largura máxima da grade */
     margin: 0 auto; /* Centraliza a grade horizontalmente */
@@ -21,11 +39,17 @@ button {
 .grid div {
     box-sizing: border-box;
     margin: 0 0;
+    color: var(--secondary);
     border: 1px solid #000000;
     border-radius: 5px;
     padding: 5px 0px;
     box-sizing: border-box; 
     transition: background-image 0.3s ease-in-out;
+}
+
+.grid a {
+  text-decoration: none;
+  color: var(--secondary);
 }
 
 input {
@@ -49,6 +73,7 @@ td, th{
 padding: 10px 15px;
 border: 1px solid #ddd;
 text-align: center;
+color: var(--secondary);
 }
 
 td {
@@ -71,31 +96,30 @@ tr:nth-child(even) {
 body {
     font-size: 13px;
     font-weight: 400;
-    font-family: monospace;
+    font-family: var(--fonte);
     margin: 0 0;
     color: #ffffff;
-    background: linear-gradient(to right, #010e1f, #010e1f);
+    background: var(--primary);
     background-size: cover;
     background-size: cover;
 }
   
 h1 {
-    font-family: monospace;
+    font-family: var(--fonte);
     width: 50%;
     margin: 10px 400px;
     text-align: center;
     border-top:5px solid #ffffff;
-    background: linear-gradient(to left, #f18324, #f18324);
+    background: var(--secondary);
     background-size: cover; 
     background-position: center;
     background-repeat: no-repeat; 
     padding: 20px; 
-    color: #0d2226;
 }
   
 h2 {
     text-align: center;
-    color: #d2d0e6;
+    color: var(--secondary);
     margin: 25px 25px;
     opacity: 0.7;
     font-size: 20px;
@@ -103,7 +127,7 @@ h2 {
 } 
 
 h3 {
-  color: #f18324;
+  color: var(--secondary);
 }
 
   footer {
@@ -134,7 +158,7 @@ h3 {
   
   footer h2 {
       text-align: center;
-      color: #d2d0e6;
+      color:var(--secondary);
       margin-top: 0px;
       margin-bottom: 0px;
       opacity: 0.7;
@@ -144,7 +168,7 @@ h3 {
   
   
   nav {
-    font-family: monospace;
+    font-family: var(--fonte);
     font: bold;
     font-size: larger;
     display: flex;
@@ -199,3 +223,10 @@ h3 {
   }
   }
   
+  #nomeGerado {
+    color: var(--secondary);
+  }
+
+  li {
+    color: var(--secondary);
+  }
